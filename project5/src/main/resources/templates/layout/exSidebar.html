@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+
+
+<!-- 조각 만들어서 파라미터로 전달하기 -->
+
+<!-- 해당 파일안에 있는 조각을 외부 페이지에 전달 -->
+<th:block th:replace = "~{/layout/basic :: setContent(~{this::content})}"></th:block>
+
+
+<!-- content라는 이름으로 조각 만들기 -->
+<h1 th:fragment = "content">exSideber Page</h1>

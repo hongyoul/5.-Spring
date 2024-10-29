@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+	<!-- setContent함수로 content파라미터로 받기 -->
+	<th:block th:fragment = "setContent(content)">
+
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+    .header {
+        height: 20vh;
+        background-color: pink;  
+    }
+    
+    .content {
+        height: 30vh;
+        background-color: lightgray;
+    }
+    .footer {
+        height: 10vh;
+        background-color: green;
+    }
+</style>
+
+<body>
+
+	<div class="header">
+	    <h1>HEADER</h1>
+	</div>
+	
+	<div class="content" >
+		
+		<!-- 파라미터로 전달받은 값 출력 -->
+		<th:block th:replace = "${content}"> </th:block>
+	   
+	    
+	</div>
+	
+	
+	<div class="footer">
+	    <h1>FOOTER</h1>
+	</div>
+
+</body>
+
+</th:block>
+
+</html>
+
